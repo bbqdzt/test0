@@ -1,0 +1,55 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage276.master.cs" Inherits="MasterPage276" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" /> 
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/master.css" /> 
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="container">网络购物系统</h1>
+        </div>
+   
+    <%--   ----------------------------   --%>
+
+    
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="index276.aspx">Shopping System</a>
+    </div>
+    <div>
+        <ul class="nav navbar-nav">
+            <li><a href="index276.aspx">Index</a></li>
+            <li><a href="contact276.aspx">Contact</a></li>
+            <li><a href="about276.aspx">About</a></li>
+            <li><a href="register276.aspx">Register</a></li>
+            <li><a href="login276.aspx">Login</a></li>
+        </ul>
+    </div>
+    </div>
+    </nav>
+
+
+    <%--   ----------------------------   --%>
+
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    </div>
+</body>
+</html>
